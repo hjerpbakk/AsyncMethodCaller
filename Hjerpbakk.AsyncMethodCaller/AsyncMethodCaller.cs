@@ -15,6 +15,9 @@ namespace Hjerpbakk.AsyncMethodCaller {
 
         private readonly TaskScheduler taskScheduler;
 
+        /// <summary>
+        /// Default Constructor.
+        /// </summary>
         public AsyncMethodCaller() {
             taskScheduler = SynchronizationContext.Current == null ? TaskScheduler.Default : TaskScheduler.FromCurrentSynchronizationContext();
         }
