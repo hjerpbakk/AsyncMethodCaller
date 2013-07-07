@@ -1,0 +1,16 @@
+title AsyncMethodCaller
+
+participant "View Model" as vm
+participant "Service" as service
+
+vm -> service: CallMethodAndContinue
+activate vm
+activate service
+
+alt Work completed
+  service -> vm: continueWith
+else Exception occurred
+  service -> vm: failWith
+end
+
+deactivate service
