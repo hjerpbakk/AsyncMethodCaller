@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Hjerpbakk.AsyncMethodCaller.TestUtility {
@@ -7,13 +6,13 @@ namespace Hjerpbakk.AsyncMethodCaller.TestUtility {
     /// Helps with testing of behavior in WPF ViewModels.
     /// </summary>
     public class TestAsyncMethodCaller : AsyncMethodCaller {
-        private Task serviceTask;
+        Task serviceTask;
 
         /// <summary>
         /// Starts the methodToCall asynchronously and waits for its completion.
         /// </summary>
         public void StartServiceAndWait() {
-            serviceTask.Start();
+			serviceTask.Start(TaskScheduler.Default);
             CallbackTask.Wait();
         }
 

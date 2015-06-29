@@ -13,7 +13,7 @@ namespace Hjerpbakk.AsyncMethodCaller {
         /// </summary>
         protected Task CallbackTask;
 
-        private readonly TaskScheduler taskScheduler;
+        readonly TaskScheduler taskScheduler;
 
         /// <summary>
         /// Default Constructor.
@@ -33,7 +33,7 @@ namespace Hjerpbakk.AsyncMethodCaller {
         public virtual void CallMethodAndContinue<T>(Func<T> methodToCall, Action<T> continueWith, Action<Exception> failWith) {
             try {
                 var serviceTask = GetTask(methodToCall, continueWith, failWith);
-                serviceTask.Start();
+				serviceTask.Start(TaskScheduler.Default);
             } catch (Exception exception) {
                 failWith(exception);
             }
@@ -49,7 +49,7 @@ namespace Hjerpbakk.AsyncMethodCaller {
         public virtual void CallMethodAndContinue(Action methodToCall, Action continueWith, Action<Exception> failWith) {
             try {
                 var serviceTask = GetTask(methodToCall, continueWith, failWith);
-                serviceTask.Start();
+				serviceTask.Start(TaskScheduler.Default);
             } catch (Exception exception) {
                 failWith(exception);
             }
