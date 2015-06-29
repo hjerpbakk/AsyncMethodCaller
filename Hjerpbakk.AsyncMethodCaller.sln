@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hjerpbakk.AsyncMethodCaller", "Hjerpbakk.AsyncMethodCaller\Hjerpbakk.AsyncMethodCaller.csproj", "{D0E58373-B42B-4BB8-9C30-02DF5B60AB32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hjerpbakk.AsyncMethodCaller.Tests", "Hjerpbakk.AsyncMethodCaller.Tests\Hjerpbakk.AsyncMethodCaller.Tests.csproj", "{AD0F9C77-6EA6-492C-ACF5-FA1FB705D934}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hjerpbakk.AsyncMethodCaller.Tests", "Hjerpbakk.AsyncMethodCaller.Tests\Hjerpbakk.AsyncMethodCaller.Tests.csproj", "{5A14A222-C6AB-4E68-83BC-0E918BBD4F0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A14A222-C6AB-4E68-83BC-0E918BBD4F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A14A222-C6AB-4E68-83BC-0E918BBD4F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A14A222-C6AB-4E68-83BC-0E918BBD4F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A14A222-C6AB-4E68-83BC-0E918BBD4F0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0E58373-B42B-4BB8-9C30-02DF5B60AB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0E58373-B42B-4BB8-9C30-02DF5B60AB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0E58373-B42B-4BB8-9C30-02DF5B60AB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0E58373-B42B-4BB8-9C30-02DF5B60AB32}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD0F9C77-6EA6-492C-ACF5-FA1FB705D934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD0F9C77-6EA6-492C-ACF5-FA1FB705D934}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD0F9C77-6EA6-492C-ACF5-FA1FB705D934}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD0F9C77-6EA6-492C-ACF5-FA1FB705D934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
